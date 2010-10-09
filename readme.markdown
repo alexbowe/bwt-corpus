@@ -1,12 +1,28 @@
 Burrows-Wheeler Transforms
 ==========================
 
+The original and generated data is available on S3
+[here](http://bwt-corpus.s3.amazonaws.com/list.html).
+This repository is simply to allow people to reproduce the data themselves.
+
+Do-It-Yourself
+--------------
+
+To build, run `build_data.sh` (after compiling the included programs).
+You must have the original Pizza&Chili data in the project directory.
+
+Description
+-----------
+
 The purpose of this is to provide a way of reproducing the data I am using in
 my thesis. The original data is taken from the 
 [Pizza&Chili](http://pizzachili.dcc.uchile.cl/texts.html) corpus.
 
 The files used are english, proteins, dna, sources, xml of 50MB, 100MB and 200MB
 sizes.
+
+Process
+-------
 
 Here is the process used to get the BWTs:
 
@@ -20,8 +36,3 @@ Here is the process used to get the BWTs:
 During this, I remove the End-Of-String symbol (or pointer) in the BWTs, as it
 is of no use to me in a Wavelet Tree, and wouldn't need to be stored in anywhere
 but the host Suffix Array.
-
-To build, run `build_data.sh` (after compiling the above included programs).
-You must have the original Pizza&Chili data in the project directory.
-
-Sometime I will make the original and resultant data available on Amazon S3...
