@@ -19,7 +19,7 @@ my thesis. The original data is taken from the
 [Pizza&Chili](http://pizzachili.dcc.uchile.cl/texts.html) corpus.
 
 The files used are english, proteins, dna, sources, xml of 50MB, 100MB and 200MB
-sizes.
+sizes. I have also created 25MB and 75MB versions of these.
 
 Process
 -------
